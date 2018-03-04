@@ -1,0 +1,33 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Despesas</h1>
+
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Total</th>
+        <th>Categoria</th>
+        <th>Observaçao</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @expenses.each do |expense| %>
+        <tr>
+          <td><%= expense.total %></td>
+          <td><%= expense.category %></td>
+          <td><%= expense.observation %></td>
+          <td><%= link_to 'Ver', expense, class: "btn btn-primary" %></td>
+          <td><%= link_to 'Editar', edit_expense_path(expense), class: "btn btn-success" %></td>
+          <td><%= link_to 'Deletar', expense, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'Cadastrar Despesa', new_expense_path, class: "btn btn-primary" %>
+</div>

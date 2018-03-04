@@ -1,0 +1,16 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @expense.total %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @expense.observation %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense), class: "btn btn-primary" %> |
+<%= link_to 'Back', expenses_path, class: "btn btn-default" %>
+</div>
