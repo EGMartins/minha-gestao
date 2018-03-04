@@ -1,0 +1,21 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Total:</strong>
+    <%= @recipe.total %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= @recipe.category %>
+  </p>
+
+  <p>
+    <strong>Observation:</strong>
+    <%= @recipe.observation %>
+  </p>
+
+  <%= link_to 'Editar', edit_recipe_path(@recipe, class: "btn btn-primary") %> |
+  <%= link_to 'Voltar', recipes_path, class: "btn btn-default" %>
+</div>

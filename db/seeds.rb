@@ -18,3 +18,11 @@ internet = Category.create(name: 'Internete', parent: expenses)
 phone = Category.create(name: 'Telefone', parent: expenses)
 consultants = Category.create(name: 'Consultoria', parent: expenses)
 cleanup = Category.create(name: 'Limpeza', parent: expenses)
+
+recipes = Category.create(name: 'Recipes')
+# Child categories
+store = Category.create(name: 'Loja', parent: recipes)
+canteen = Category.create(name: 'Cantina', parent: recipes)
+raffle = Category.create(name: 'Rifa', parent: recipes)
+donation = Category.create(name: 'Doação Anônima', parent: recipes)
+carnet = Category.create(name: 'Carnê', parent: recipes)
