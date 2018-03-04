@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'welcome#index'
+
+  devise_for :users
+  get 'home/index'
 
   resources :recipes
   resources :expenses

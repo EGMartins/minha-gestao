@@ -34,6 +34,10 @@ gem 'jbuilder', '~> 2.5'
 # Gem to manage the categories
 gem 'ancestry'
 
+# Gem to login system
+gem 'devise'
+gem 'devise-bootstrapped'
+
 # Gem to handle styes
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.7'

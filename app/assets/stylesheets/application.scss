@@ -1,2 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#menu-entrar {
+    color: white;
+}
+
+.navbar-right {
+    li {
+        margin-left: 20px;
+    }
+}
